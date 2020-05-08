@@ -35,7 +35,7 @@ Nuestro rol dentro del proyecto que gira en torno al Hackathon 4 y el desarrollo
 Para llevar a cabo el desarrollo de un algoritmo de audio se ha contando para el departamento de audio con la empresa de Audio Consulting. Gracias a su experiencia en este tipo de proyectos se va a desarrollar un modelo que permita clasificar los sonidos de modo que se pueda reconocer la tost mediante la recogida de audios. 
 El objetivo es poder transformar estos datos para ponerlos a disposición de su tratamiento para evaluar frecuencia y situaciones puntuales. El tratamiento del algortimo permite extraer un dataset que informe sobre la fecha, la hora y si se ha producido tos. 
 
-Para más información se puede consultar la presentación del proyecto:
+Para más información se puede consultar la [Presentación del proyecto] (https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Presentación_DP4.pptx).
 
 
 ## Software & librerias utilizadas <a name="software"></a>
