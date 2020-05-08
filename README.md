@@ -74,6 +74,8 @@ En nuestra configuración, aplicamos tareas simultáneas, así que a medida que 
 
 GIF ESPECTROGRAMAS
 
+![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/espectograma.gif)
+
 ## Resultados <a name="resultados"></a>
 
 ### Accuracy 
