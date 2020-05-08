@@ -6,102 +6,88 @@
 2. [Departamento de Algoritmos de Audio](#algoritmo)
 3. [Software & librerias utilizadas](#software)
 4. [Datasets](#datasets)
-    1. [Lista de Open Datasets](#opendata)
-    2. [Datasets Propios](#customdata)
-5. [Resultados](#resultados)
+    1. [ESC50](#ESC50)
+    2. [Kaggle Dataset](#kaggledataset)
+5. [Proceso](#proceso)
+    1. [Ventanas](#window)
+    2. [Espectrogramas](#spectrograms)
+6. [Resultados](#resultado)
+7. [Paper](#paper)
 
 
-## Departamento de Algoritmos de Imagen <a name="introduccion"></a>
+## Introducción <a name="introduccion"></a>
 
+Debido a la situación provocada por el coronavirus en prácticamente todo el planeta. Nos encontramos en un punto en el cual la velocidad de propagación del virus se está produciendo de manera exponencial. 
+
+Para ello Fenix propone una App que pueda ayudar a prevenir la enfermedad y dotar de información en tiempo real tanto a usuarios como a organismos sanitarios para poder tomar decisiones efectivas. Sus características son las siguientes: 
+
+Predicción del estado de Salud: Mostrando sintomático, asintomático y sano.
+Trackeo en tiempo real de los usuarios mediante la geolocalización. 
+Histórico de trazabilidad del usuario.
+Detección de tipos de sonidos.
+Análisis de datos en tiempo real.
 Nuestro rol dentro del proyecto que gira en torno al Hackathon 4 y el desarrollo de la aplicación FENIX estaba encuadrado dentro del departamento de Imagen donde nos hemos encargado del desarrollo de los algoritmos de imagen que van a formar parte de la aplicación final. 
 
-Nuestro principal cometido en el desarrollo de los algoritmos de imagen era basarnos en modelos de detección de objetos ya existentes, que han funcionado de manera efectiva para la detección de caras y detección de manos y fusionarlos para que puedan funcionar juntos y cumplir con nuestros dos casos de uso principales:
- 
-**1. Evitar que los usuari@s se toquen la cara** (emitir un aviso en forma de sonido/ contador en el momento que esta situación se de).
- 
-**2. Recordar a los usuario que se pongan la mascarilla y que se la pongan de forma correcta** (Emitir un aviso recordando al usuario que no lleva puesta la mascarilla / alertarle de que la lleva puesta de forma incorrecta, no cubriendo las zonas delicadas (nariz y boca) que la mascarilla está destinada a proteger.
- 
-Este repo contiene los diferentes modelos que hemos desarrollado para cumplir con los siguientes cometidos que nos habían sido encargados:
 
-* Implementar un modelo que fuera capaz de **detectar caras**
- 
-* Implementar un modelo que fuera capaz de **detectar manos**
- 
-* Combinar ambos modelos para **identificar cuando una persona se toca la cara**
- 
-* Implementar / crear un modelo que fuera capaz de **identificar si una persona lleva o no una mascarilla puesta**
 
-## Modelos Utilizados <a name="algoritmo"></a>
+## Departamento de Algoritmos de Audio <a name="algoritmo"></a>
 
-Los siguientes modelos han sido implementados para cumplir la función de detección de objetos para nuestros diferentes casos de uso:
+Para llevar a cabo el desarrollo de un algoritmo de audio se ha contando para el departamento de audio con la empresa de Audio Consulting. Gracias a su experiencia en este tipo de proyectos se va a desarrollar un modelo que permita clasificar los sonidos de modo que se pueda reconocer la tost mediante la recogida de audios. 
+El objetivo es poder transformar estos datos para ponerlos a disposición de su tratamiento para evaluar frecuencia y situaciones puntuales. El tratamiento del algortimo permite extraer un dataset que informe sobre la fecha, la hora y si se ha producido tos. 
 
-* Detección de caras : Libreria **Dlib** mediante **HOG** (Histogram Oriented Gradients + **SVM** (Support Vector Machines)
-* Detección de manos : 
-    - **Yolov3** ([yolov3_custom.cfg](https://drive.google.com/file/d/1-a38MrTHHTl9yyyZEwBdl4la8PEYFsXG/view?usp=sharing),  [yolov3_custom.weights](https://drive.google.com/open?id=1pg6S0rmhrcFV01EED9tgHnPo8yuNdxQ4), [yolov3 notebook](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/1.Training/Train_YOLOv3.ipynb))
-
-    - **RetinaNet** ([RetinaNet_notebook](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/1.Training/Train_Retinanet_Salim.ipynb))
-
-* Detección de mascarillas : **Yolov3** ([yolov3_custom.cfg](https://drive.google.com/open?id=1CK-jXpu0Op8wOYJchklCD4I2YuLT91iG), [yolov3_custom.weights](https://drive.google.com/open?id=1i7vTsoPTx3UUIefgmco5MRHDgg6Nq9hI), [yolov3_notebook](https://drive.google.com/open?id=1nUwsYnNTgkRei3AhK1AVCWDSHiQOBsdP))
-
+Para más información se puede consultar la presentación del proyecto:
 
 
 ## Software & librerias utilizadas <a name="software"></a>
 
-* [LabelImg](https://github.com/tzutalin/labelImg) : Software de etiquetado de Imagenes [[link]]
-* [OpenCV](https://github.com/opencv/opencv) : Biblioteca de Visión Artificial
 * **Tensor Flow** : Biblioteca de Machine Learning
 * **Keras** : Biblioteca de Redes Neuronales
-* **Dlib** : Biblioteca de algortimos de Machine Leearning
-* [Darknet](https://github.com/AlexeyAB/darknet): Biblioteca desarrollada para el entrenamiento, inferencia y evaluación de modelos YOLO 
+* [Pydub](https://github.com/jiaaro/pydub): Biblioteca desarrollada para la modificación de archivos de audio
+* [Librosa](https://github.com/librosa/librosa): Biblioteca desarrollada el análisis de música y audio en general
 
 ## Datasets <a name="datasets"></a>
 
-Durante el desarrollo del proyecto hemos utilizado una combinacion de datasets públicos y otros propios,generados para las necesidades especificas de nuestros casos de uso:
+Durante el desarrollo del proyecto hemos utilizado dos datasets públicos, creados para cubrir las necesidades de aquellos problemas relacionados con sonido ambiente:
 
-### Lista de Open Datasets <a name="opendata"></a>
+### ESC50 <a name="ESC50"></a>
 
-* **COCO Dataset**: Dataset abierto que contiene más de 220k imágenes etiquetadas y 1.5 millón de clases de objetos diferentes.
-* **Ego Hand Dataset**: Dataset creado por la Universidad de Indiana que contiene 15,083 manos etiquetadas y 48 videos diferentes de manos.
-* **OID Dataset** : Dataset con 500 clases de objetos diferentes.
-* **Medical Mask Dataset**: Dataset creado para una competición de Kaggle con 682 imagenes de gente portando mascarillas médicas.
+El ESC50 corresponde al conjunto de datos Clasificación de sonido ambiental (ESC), que fue lanzado por Piczak en 2015. Dicho conjunto contiene 2.000 clips de audio de 5 segundos de duración, divididos por igual en 50 categorías. Para este caso de uso se trabaja con 13 de ellas, las cuales están estrechamente relacionadas con los sonidos a los que un dispositivo móvil puede estar expuesto en el día a día.
 
-### Datasets Propios <a name="customdata"></a>
+### Kaggle Dataset <a name="kaggledataset"></a>
 
-Para complementar el entrenamiento de los modelos desarrollados y entrenados con los datasets públicos ya mencionados, generamos con fotos propias de los miembros del equipo y con colaboración de los compañeros de EDEM otros datasets con fotos mas enfocadas a los casos de uso que quiere detectar nuestros algoritmos de imagenconn el fin de mejorar la precisión y rapidez de nuestros modelos:
+Por otra parte también se utiliza el Freedsound Dataset Kaggle 2018 (o FSDKaggle2018 para abreviar). Este conjunto de datos de audio contiene 11,073 archivos anotados con 41 etiquetas. Este conjunto de datos se usó originalmente para un desafío en la detección y clasificación de escenas y eventos acústicos (DCASE) en 2018. En este conjunto de datos también se seleccionan aquellas categorías o etiquetas de sonido que coinciden con nuestro caso de uso. De esta forma nos quedamos sólo con 17 categorías.
 
-* Fotos de personas tocándose la cara
-* Fotos de personas con mascarillas
-* Fotos de manos con perfiles y angulos menos comunes
+## Proceso<a name="proceso"></a>
 
+A continuación se muestra un diagrama del proceso de clasificación de sonidos:
+
+![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/WhatsApp%20Image%202020-05-08%20at%2019.15.40.jpeg)
+
+### Ventanas<a name="window"></a>
+
+Con el fin de poder realizar un análisis completo del sonido, se divide el audio en ventanas que permitan estudiar todo el contenido del mismo sin perder información. Para ello se define la duración de las ventanas y el salto que deben tomar las ventanas hasta recorrer todo el audio por completo.
+
+### Espectrogramas<a name="spectrograms"></a>
+
+El preprocesamiento implica la transformación de nuestros archivos de audio en datos que nuestro modelo pueda utilizar para hacer predicciones. Para hacerlo, necesitamos transformar el audio en imágenes, y para ello utilizamos los espectrogramas. Dichos espectrogramas se generan utilizando el paquete Librosa aplicando un banco de filtros de mel al espectro de magnitud de cada segmento y luego tomando su logaritmo.
+En nuestra configuración, aplicamos tareas simultáneas, así que a medida que generamos nuestros espectrogramas, también aplicamos nuestra división de datos para capacitación y validación, lo que nos da como resultado que nuestros espectrogramas se guardan en directorios de entrenamiento y prueba y están listos para ser procesados ​​por nuestro modelo.
+
+GIF ESPECTROGRAMAS
 
 ## Resultados <a name="resultados"></a>
 
 ### Accuracy 
 
-| First Header  |    DATASET    |       mAP     |       FPS     | 
-| ------------- | ------------- | ------------- | ------------- |
-| RetinaNet     |    EGOHAND    |      91%      |      0.25     |
-| YOLOv3        |    EGOHAND    |      90%      |      5.00     |
-| Tiny YOLO     |    EGOHAND    |      70%      |      15.00    |
+| Medida  |    Accuracy    |
+| ------------- | ------------- |
+| Validation accuracy     |    84,04%    |
+| Top 5 Prediction       |    96,17 %    |
+| Cough Prediction    |    79,00 %    |
 
-A continuación se puede comprobar los resultados de los diferentes detectores implementados al probarlo con imagenes propias.
-
-### Detección de caras
-
-![image](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/src/cara.jpeg)
-
-![image](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/src/face-salim.jpeg)
-
-### Detección de manos
-
-![image](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/src/mano.jpeg)
+A continuación se puede comprobar el resultado que se obtiene en Google BigQuery.
 
 
-### Don't touch your face!
+## Paper <a name="paper"></a>
 
-![gif](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/src/DontTouchYourFace.gif)
+Para unificar y completar la información sobre este proyecto se adjuntan un Paper en el cual se muestran más detalles de la arquitectura, conclusiones 
 
-
-### Detección de mascarillas
-
-![gif](https://github.com/diecalsa-EDEM/FenixCV/blob/facialDetection/src/MaskDetection.gif)
