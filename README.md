@@ -86,6 +86,8 @@ En nuestra configuración, aplicamos tareas simultáneas, así que a medida que 
 
 A continuación se puede comprobar el resultado que se obtiene en Google BigQuery.
 
+![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/big_query.jpeg)
+
 
 ## Paper <a name="paper"></a>
 
