@@ -93,7 +93,8 @@ A continuación se puede comprobar el resultado que se obtiene en Google BigQuer
 
 Para unificar y completar la información sobre este proyecto se adjuntan un Paper en el cual se muestran más detalles de la arquitectura, conclusiones.
 
-URL ---> https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Paper_DP4.pdf
+* [Paper_DP4](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Paper_DP4.pdf)
+
 
 ![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Image_abstract.png)
 
