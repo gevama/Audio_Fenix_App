@@ -89,5 +89,7 @@ A continuación se puede comprobar el resultado que se obtiene en Google BigQuer
 
 ## Paper <a name="paper"></a>
 
-Para unificar y completar la información sobre este proyecto se adjuntan un Paper en el cual se muestran más detalles de la arquitectura, conclusiones 
+Para unificar y completar la información sobre este proyecto se adjuntan un Paper en el cual se muestran más detalles de la arquitectura, conclusiones.
+
+![ScreenShot](https://{url})
 
