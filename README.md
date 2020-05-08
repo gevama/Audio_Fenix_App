@@ -61,7 +61,7 @@ Por otra parte también se utiliza el Freedsound Dataset Kaggle 2018 (o FSDKaggl
 
 A continuación se muestra un diagrama del proceso de clasificación de sonidos:
 
-![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/WhatsApp%20Image%202020-05-08%20at%2019.15.40.jpeg)
+![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Work_flow_h4.jpeg)
 
 ### Ventanas<a name="window"></a>
 
