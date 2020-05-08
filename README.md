@@ -37,6 +37,7 @@ El objetivo es poder transformar estos datos para ponerlos a disposición de su 
 
 Para más información se puede consultar la [Presentación del proyecto](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Presentación_DP4.pptx).
 
+![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Portada_presentación.png)
 
 ## Software & librerias utilizadas <a name="software"></a>
 
