@@ -45,6 +45,7 @@ Para más información se puede consultar la [Presentación del proyecto](https:
 * **Keras** : Biblioteca de Redes Neuronales
 * [Pydub](https://github.com/jiaaro/pydub): Biblioteca desarrollada para la modificación de archivos de audio
 * [Librosa](https://github.com/librosa/librosa): Biblioteca desarrollada el análisis de música y audio en general
+* [Modelo](https://storage.cloud.google.com/hackathon_4_audio/MixV1_New_Densenet201_stft_weights.best.hdf5): Pincha en el enlace para descargar el modelo. 
 
 ## Datasets <a name="datasets"></a>
 
