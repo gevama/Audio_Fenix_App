@@ -11,7 +11,7 @@
 5. [Proceso](#proceso)
     1. [Ventanas](#window)
     2. [Espectrogramas](#spectrograms)
-6. [Resultados](#resultado)
+6. [Resultados](#resultados)
 7. [Paper](#paper)
 
 
