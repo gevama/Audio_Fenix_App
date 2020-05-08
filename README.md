@@ -72,9 +72,7 @@ Con el fin de poder realizar un análisis completo del sonido, se divide el audi
 El preprocesamiento implica la transformación de nuestros archivos de audio en datos que nuestro modelo pueda utilizar para hacer predicciones. Para hacerlo, necesitamos transformar el audio en imágenes, y para ello utilizamos los espectrogramas. Dichos espectrogramas se generan utilizando el paquete Librosa aplicando un banco de filtros de mel al espectro de magnitud de cada segmento y luego tomando su logaritmo.
 En nuestra configuración, aplicamos tareas simultáneas, así que a medida que generamos nuestros espectrogramas, también aplicamos nuestra división de datos para capacitación y validación, lo que nos da como resultado que nuestros espectrogramas se guardan en directorios de entrenamiento y prueba y están listos para ser procesados ​​por nuestro modelo.
 
-GIF ESPECTROGRAMAS
-
-![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/espectograma.gif)
+![gif](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/espectograma.gif)
 
 ## Resultados <a name="resultados"></a>
 
