@@ -93,5 +93,5 @@ Para unificar y completar la información sobre este proyecto se adjuntan un Pap
 
 URL ---> https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Paper_DP4.pdf
 
-![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/image_abstract.png)
+![image](https://github.com/gevama/Audio_Fenix_App/blob/master/4.%20Data%20example/Image_abstract.png)
 
