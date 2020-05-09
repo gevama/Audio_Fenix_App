@@ -59,6 +59,8 @@ El ESC50 corresponde al conjunto de datos Clasificación de sonido ambiental (ES
 
 Por otra parte también se utiliza el Freedsound Dataset Kaggle 2018 (o FSDKaggle2018 para abreviar). Este conjunto de datos de audio contiene 11,073 archivos anotados con 41 etiquetas. Este conjunto de datos se usó originalmente para un desafío en la detección y clasificación de escenas y eventos acústicos (DCASE) en 2018. En este conjunto de datos también se seleccionan aquellas categorías o etiquetas de sonido que coinciden con nuestro caso de uso. De esta forma nos quedamos sólo con 17 categorías.
 
+Accede al siguiente link para obtener un ejemplo de audio: [Audio_Ejemplo](https://drive.google.com/file/d/1saZQI0pY8eFjmyBZcsIdXGD9xkRL89Cx/view)
+
 ## Proceso<a name="proceso"></a>
 
 A continuación se muestra un diagrama del proceso de clasificación de sonidos:
